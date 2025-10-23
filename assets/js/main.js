@@ -27,15 +27,22 @@ for (i = 0; i < 10; i++) {
         .then(res => res.json())
         .then(data => {
             console.log(data);
+            // -estraggo il dato con la mail
             let eMail = data["response"]
             console.log(eMail);
-        })
+            //creo un li
+            let li = document.createElement("li")
+            // inserisco il testo nel li
+            li.innerText = eMail
+            console.log(li);
+
+
+            // lo aggiungo dentro l'ul con appendchild
+        }
+        )
 
 }
 
-// -estraggo il dato con la mail
 
-//creo un li
 
-// lo aggiungo dentro l'ul con appendchild
 
